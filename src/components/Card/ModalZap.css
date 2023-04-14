@@ -1,0 +1,67 @@
+.kontejner h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(4, 1, 29);
+    padding-bottom: 5%;
+}
+
+.kontejner button {
+    margin-top: 5%;
+}
+
+.inside {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-container {
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    width: 50%;
+    animation: fade-slide-in 2.0s ease-out forwards;
+  }
+
+.labela {
+    flex: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(4, 1, 29);
+}
+
+.inpPolje {
+    flex: 2;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    height: 30px;
+}
+
+input[type="text"], input[type="date"], select, option {
+    font-size:17px;
+}
+
+@keyframes fade-slide-in {
+    from {
+      transform: translateY(-5rem);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }

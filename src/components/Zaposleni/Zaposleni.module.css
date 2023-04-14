@@ -1,0 +1,53 @@
+.zap {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 40rem;
+}
+    /*animation: fade-slide-in 5.0s ease-out forwards;
+    animation: 3s ease-in 20s infinite reverse both running slidein;*/
+  
+  
+  .zap ul {
+    list-style: none;
+    padding: 1rem;
+    animation-name: slideleftright;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 4;
+  }
+  
+  .zap li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+
+  /*.slika {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding-right: 37px;
+  }*/
+
+  .slikaKontejner {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding-right: 37px;
+  }
+
+  .slikaKontejner img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  @keyframes slideleftright {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(35%);
+    }
+  }
